@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Testimonials - IIT Palakkad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-left">
+                    <img src="IIT_PKD_long logo_RGB.jpg" alt="IIT Palakkad Logo" class="iit-logo">
+                </div>
+                <div class="header-title">
+                    <h1>Alumni Testimonials</h1>
+                    <p>Voices of Excellence from IIT Palakkad</p>
+                </div>
+                <div class="logo-right">
+                    <img src="iarcell_logo.png" alt="IAR Cell Logo" class="iar-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-gap"></div>
+
+    <!-- Hero Image Slider -->
+    <section class="hero-slider">
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <div class="slide active">
+                    <div class="slide-image">
+                        <img src="iitpkd1.jpg" alt="IIT Palakkad Campus">
+                    </div>
+                    <div class="slide-content">
+                        <div class="horizontal-stripes horizontal-stripes-top"></div>
+                        <div class="slide-text">
+                            <h2>Modern Campus Infrastructure</h2>
+                            <p>State-of-the-art facilities fostering innovation and learning excellence</p>
+                        </div>
+                        <div class="horizontal-stripes horizontal-stripes-bottom"></div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="iitpkd2.jpeg" alt="IIT Palakkad Academic Excellence">
+                    </div>
+                    <div class="slide-content">
+                        <div class="horizontal-stripes horizontal-stripes-top"></div>
+                        <div class="slide-text">
+                            <h2>Academic Excellence</h2>
+                            <p>Nurturing brilliant minds for tomorrow's technological challenges</p>
+                        </div>
+                        <div class="horizontal-stripes horizontal-stripes-bottom"></div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="iitpkd3.jpg" alt="IIT Palakkad Research Innovation">
+                    </div>
+                    <div class="slide-content">
+                        <div class="horizontal-stripes horizontal-stripes-top"></div>
+                        <div class="slide-text">
+                            <h2>Research & Innovation</h2>
+                            <p>Pushing boundaries in science, technology, and engineering</p>
+                        </div>
+                        <div class="horizontal-stripes horizontal-stripes-bottom"></div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="iitpkd4.jpeg" alt="IIT Palakkad Celebrating Success">
+                    </div>
+                    <div class="slide-content">
+                        <div class="horizontal-stripes horizontal-stripes-top"></div>
+                        <div class="slide-text">
+                            <h2>Celebrating Success</h2>
+                            <p>Proud moments of achievement and new beginnings</p>
+                        </div>
+                        <div class="horizontal-stripes horizontal-stripes-bottom"></div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="iitpkd5.png" alt="IIT Palakkad Sustainable Campus">
+                    </div>
+                    <div class="slide-content">
+                        <div class="horizontal-stripes horizontal-stripes-top"></div>
+                        <div class="slide-text">
+                            <h2>Sustainable Campus</h2>
+                            <p>Harmonizing cutting-edge technology with environmental consciousness</p>
+                        </div>
+                        <div class="horizontal-stripes horizontal-stripes-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="slider-btn next-btn" onclick="changeSlide(1)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Slider Indicators (Dots) -->
+            <div class="slider-indicators" style="position: absolute; bottom: 30px; left: 0; width: 100%; display: flex; justify-content: center; gap: 12px; z-index: 20;">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Alumni Say</h2>
+                <div class="section-gold-line"></div>
+                <p>Discover how IIT Palakkad shaped their journey to success</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"IIT Palakkad provided me with not just technical knowledge, but also the confidence to tackle real-world challenges. The faculty's guidance and the collaborative environment helped me grow both personally and professionally."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Class of 2019 • Software Engineer at Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"The research opportunities at IIT Palakkad opened doors I never imagined. Working on cutting-edge projects with world-class professors prepared me for my PhD and current role in academia."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Arjun Menon</h4>
+                            <p>Class of 2018 • Research Scientist at MIT</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"The entrepreneurial ecosystem at IIT Palakkad is incredible. The support from the incubation center and mentorship from faculty helped me launch my startup right after graduation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sneha Patel</h4>
+                            <p>Class of 2020 • Founder & CEO, TechVenture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"IIT Palakkad's emphasis on interdisciplinary learning and innovation gave me a unique perspective. The skills I developed here have been instrumental in my career in sustainable technology."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Rahul Kumar</h4>
+                            <p>Class of 2017 • Lead Engineer at Tesla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"The international exposure and collaborative projects at IIT Palakkad broadened my horizons. The institute's focus on global partnerships prepared me perfectly for my role in multinational corporations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Anjali Reddy</h4>
+                            <p>Class of 2019 • Senior Consultant at McKinsey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <p>"IIT Palakkad's strong foundation in core engineering principles combined with modern technology exposure made me industry-ready. The practical approach to learning here is unmatched."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Vikram Singh</h4>
+                            <p>Class of 2021 • Product Manager at Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Indian Institute of Technology Palakkad. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Alumni Network</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Visit Campus</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
