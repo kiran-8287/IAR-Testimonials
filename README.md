@@ -5,7 +5,7 @@ Absolutely! Here’s a detailed, well-structured “Features” and project summ
 # 🏆 IIT Palakkad Testimonials Page
 
 ## 🌐 Live Demo
-* [Testimonials Live Demo](#) 
+* [Testimonials Live Demo](https://kiran-8287.github.io/IAR-Testimonials/) 
 
 ---
 
